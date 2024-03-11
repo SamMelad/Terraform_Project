@@ -96,3 +96,45 @@ In the project folder, you will find the following files:
 2. `provider.tf`: This file is used to configure the provider and upload the state file to the S3 backend.
 3. `variable.tf`: This file is used to declare the variables used in all modules' variables file.
 4. `output.tf`: This file declares the outputs of the project, which appear after Terraform finishes.
+
+### Installing and Running the Project
+
+To install and run the project, follow these steps:
+
+1. **Clone the repository** to your local machine:
+
+    ```bash
+    git clone https://github.com/SamMelad/Terraform_Project.git
+    ```
+
+2. **Navigate to the project directory**:
+
+    ```bash
+    cd Terraform_Project
+    ```
+
+3. **Initialize Terraform**:
+
+    ```bash
+    terraform init
+    ```
+
+    This command initializes your Terraform workspace by downloading the AWS provider and setting up the backend for storing your Terraform state.
+
+4. **Create an execution plan**:
+
+    ```bash
+    terraform plan
+    ```
+
+    This command creates an execution plan and shows you what changes will be made to your infrastructure.
+
+5. **Apply the changes**:
+
+    ```bash
+    terraform apply
+    ```
+
+    This command applies the changes required to reach the desired state of the configuration.
+
+That's it! You have now successfully deployed the project on your AWS account.
